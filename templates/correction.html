@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Corrections : </title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: #0047AB;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    h2 {
+        color: #0047AB;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .correction {
+        color: #0047AB;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Corrections : </h1>
+    {% if result %}
+      <p>Did you mean :</p>
+      <ul>
+        {% for correction in result %}
+          <p>{{ correction }}</p>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No suggestions found.</p>
+    {% endif %}
+  </body>
+</html>
