@@ -1,5 +1,5 @@
 # NLP-Auto-Correct__Flask  
-This is a Flask web application that uses natural language processing (NLP) techniques to correct misspelled words.
+This is a Flask web application that uses natural language processing (NLP) techniques to correct misspelled words(en).
 ## Usage
 To use the app, simply type a misspelled word into the input field on the home page and click "Correct". The app will suggest possible corrections for the word.
 * To install flask : 
